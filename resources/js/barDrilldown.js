@@ -117,4 +117,5 @@ function drawDrilldown(){
 });
 }
 
-drawDrilldown();
+// drawDrilldown();
+// <div id="container" style="width:600px;height:400px;"></div>

@@ -17,8 +17,8 @@
 </head>
 
 <body>
-   <div id="authorize-div" style="display: none">
-      <span>Authorize access to Google Sheets API</span>
+   <div id="authorize-div" style="display: block">
+      <span>Access google api</span>
       <!--Button for the user to click to initiate auth sequence -->
       <button id="authorize-button" onclick="handleAuthClick(event)">
         Authorize
@@ -26,16 +26,13 @@
     </div>
 
     <pre id="output"></pre>
+    <div id="container" style="width:1000px;height:600px;"></div>
     
-  <div id="container" style="width:600px;height:400px;"></div>
-
-
-
-
+  
   <script src="resources/libs/jquery-1.8.2.min.js"></script>
   <script src="resources/libs/highcharts.js"></script>
   <script src="resources/libs/drilldown.js"></script>
   <script src="resources/js/googleSheets.js"></script>
-  <script src="resources/js/barDrilldown.js"></script>
+  <script src="resources/js/barDrilldownDynamic.js"></script>
 </body>
 </html>
