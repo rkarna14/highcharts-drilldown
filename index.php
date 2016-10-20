@@ -18,8 +18,8 @@
 
   <div id="container" style="width:600px;height:400px;"></div>
   <script src="resources/libs/jquery-1.8.2.min.js"></script>
-  <script src="http://code.highcharts.com/highcharts.js"></script>
-  <script src="https://code.highcharts.com/modules/drilldown.js"></script>
+  <script src="resources/libs/highcharts.js"></script>
+  <script src="resources/libs/drilldown.js"></script>
   <!--<script src="resources/js/areaChart.js"></script>-->
   <script src="resources/js/barDrilldown.js"></script>
 </body>
