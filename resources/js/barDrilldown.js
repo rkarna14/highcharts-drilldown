@@ -1,4 +1,4 @@
-function drawDrilldown(){
+function drawDrilldownWithData(yearlyStats, monthlyStats){
     $(function () {
     // Create the chart
     $('#container').highcharts({
@@ -41,81 +41,10 @@ function drawDrilldown(){
             pointFormat: '<span style="color:{point.color}">{point.name}</span>: <b>{point.y:.2f}%</b> of total<br/>'
         },
 
-        series: [{
-            name: 'Yearly',
-            colorByPoint: true,
-            data: [{
-                name: '2010',
-                y: 3.88,
-                drilldown: '2010'
-            }, {
-                name: '2011',
-                y:4.69,
-                drilldown: '2011'
-            }, {
-                name: '2012',
-                y: 6.78,
-                drilldown: '2012'
-            }]
-        }],
+        series: yearlyStats,
         drilldown: {
-            series: [{
-                name: '2010',
-                id: '2010',
-                data: [
-                    [
-                        'January',
-                        -3.08
-                    ],
-                    [
-                        'February',
-                        0.26
-                    ],
-                    [
-                        'March',
-                        1.26
-                    ]
-                ]
-            },{
-                name: '2011',
-                id: '2011',
-                data: [
-                    [
-                        'January',
-                        -3.08
-                    ],
-                    [
-                        'February',
-                        0.26
-                    ],
-                    [
-                        'March',
-                        1.26
-                    ]
-                ]
-            },{
-                name: '2012',
-                id: '2012',
-                data: [
-                    [
-                        'January',
-                        -3.08
-                    ],
-                    [
-                        'February',
-                        0.26
-                    ],
-                    [
-                        'March',
-                        1.26
-                    ]
-                ]
-            }
-            ]
+            series: monthlyStats
         }
     });
 });
 }
-
-// drawDrilldown();
-// <div id="container" style="width:600px;height:400px;"></div>

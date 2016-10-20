@@ -36,6 +36,6 @@
   <script src="resources/libs/highcharts.js"></script>
   <script src="resources/libs/drilldown.js"></script>
   <script src="resources/js/googleSheets.js"></script>
-  <script src="resources/js/barDrilldownDynamic.js"></script>
+  <script src="resources/js/barDrilldown.js"></script>
 </body>
 </html>
