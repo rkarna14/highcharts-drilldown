@@ -115,3 +115,6 @@ function appendPre(message) {
     pre.appendChild(textContent);
 }
 
+gapi.auth.authorize(
+        { client_id: CLIENT_ID, scope: SCOPES, immediate: false },
+        handleAuthResult);
