@@ -26,6 +26,9 @@
     </div>
 
     <pre id="output"></pre>
+    <div id="google-sheet-link" style="display: none">
+      <a href="https://docs.google.com/spreadsheets/d/1LNy4spXbG7JAIU-ApTDINfXuNUilAapofN1zyJ9ezB0/edit?usp=sharing">Sample Google Sheet</a>
+    </div>
     <div id="container" style="width:1000px;height:600px;"></div>
     
   
